@@ -17,6 +17,9 @@
     .active {
       font-weight: bold;
     }
+    .fondo-color1 {
+        background-color: #f2e8ae;
+    }
     
   </style>
 </head>
@@ -35,26 +38,16 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav mx-auto flex-nowrap">
-        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link" href="acerca_de.html">Quienes somos</a></li>
-        <li class="nav-item"><a class="nav-link active" href="#">Destacados</a></li>
-        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#quienes_somos">Quienes somos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#destacados">Destacados</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
       </ul>
       </div>
     </div>
   </nav>
 
-
-  <section>
-    <div class="container py-5 my-5">
-      <h1>Productos</h1>
-      <p>etra mauris. Pellentesque eu malesuada ipsum. Donec viverra porta lectus quis dignissim. Praesent eget augue placerat, accumsan dolor a, auctor tortor. Etiam eget placerat odio, nec bibendum lectus. Mauris dictum dignissim eros vitae malesuada. Sed posuere tristique ipsum.</p>
-      <p>fringilla arcu in neque imperdiet, sed commodo tortor iaculis. Vestibulum nec augue convallis, sollicitudin sem eu, interdum nisl. Mauris faucibus nulla at purus ornare, vel posuere dui tristique. Morbi iaculis, nibh in tincidunt rutrum, risus leo congue enim, eget tincidunt lacus lorem bibendum massa. Integer maximus a sem ut ultricies. Suspendisse dolor enim, consequat eu varius vitae, fringilla sed sapien. Quisque nec interdum dolor. Ut luctus finibus urna vitae porttitor.</p>
-      <p>ultricies luctus interdum. Aenean interdum, tortor ac suscipit mollis, mauris massa fringilla lorem, vitae porta turpis sapien vitae turpis. Maecenas massa sapien, auctor vitae faucibus sed, blandit eget est. Nam at blandit diam. Maecenas cursus ornare ultricies. Quisque sit amet lectus suscipit dui ornare lacinia sit amet iaculis velit. Aenean consectetur auctor accumsan. Nullam tristique tortor urna, vel volutpat sem sodales et. Ut eu ultrices odio. Curabitur ullamcorper in tortor eget maximus. Suspendisse luctus sem nibh, vitae suscipit metus lobortis ac. Phasellus eget magna imperdiet, cursus ipsum nec, tempus nisl. Nunc pretium euismod enim eu ullamcorper. </p>
-    </div>
-  </section>
-
-  <section class="section">
+  <section class="section" id="inicio">
     <div id="carousel_index" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
@@ -99,7 +92,25 @@
       </button>
     </div>
   </section>
-  
+
+  <section id="quienes_somos">
+    <div class="fondo-color1 py-5">
+        <div class="container py-5">
+          <h1 class="mb-5">Rincón de Sabores 🍲</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu lacus viverra, semper nisi et, consequat libero. Vivamus risus erat, hendrerit tempus sem vulputate, maximus condimentum sem. Donec sed posuere dui, et pharetra mauris. Pellentesque eu malesuada ipsum. Donec viverra porta lectus quis dignissim. Praesent eget augue placerat, accumsan dolor a, auctor tortor. Etiam eget placerat odio, nec bibendum lectus. Mauris dictum dignissim eros vitae malesuada. Sed posuere tristique ipsum.</p>
+          <p>fringilla arcu in neque imperdiet, sed commodo tortor iaculis. Vestibulum nec augue convallis, sollicitudin sem eu, interdum nisl. Mauris faucibus nulla at purus ornare, vel posuere dui tristique. Morbi iaculis, nibh in tincidunt rutrum, risus leo congue enim, eget tincidunt lacus lorem bibendum massa. Integer maximus a sem ut ultricies. Suspendisse dolor enim, consequat eu varius vitae, fringilla sed sapien. Quisque nec interdum dolor. Ut luctus finibus urna vitae porttitor.</p>
+          <p>ultricies luctus interdum. Aenean interdum, tortor ac suscipit mollis, mauris massa fringilla lorem, vitae porta turpis sapien vitae turpis. Maecenas massa sapien, auctor vitae faucibus sed, blandit eget est. Nam at blandit diam. Maecenas cursus ornare ultricies. Quisque sit amet lectus suscipit dui ornare lacinia sit amet iaculis velit. Aenean consectetur auctor accumsan. Nullam tristique tortor urna, vel volutpat sem sodales et. Ut eu ultrices odio. Curabitur ullamcorper in tortor eget maximus. Suspendisse luctus sem nibh, vitae suscipit metus lobortis ac. Phasellus eget magna imperdiet, cursus ipsum nec, tempus nisl. Nunc pretium euismod enim eu ullamcorper. </p>
+        </div>
+    </div>
+  </section>
+
+  <section id="destacados">
+    <div class="container py-5 my-5">
+        <h1 class="text-center">Productos destacados</h1>
+
+    </div>
+  </section>
+
   <footer class="bg-info text-center">
     <div class="text-center p-3 text-bg-dark">
       contacto@rincondesabores.net
