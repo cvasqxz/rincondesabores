@@ -21,10 +21,20 @@
     p {
       text-align: justify;
     }
+
+   .fondo1 {
+      background: #F8ECC9;
+    }
+    .fondo2 {
+      background: #BFD2BE;
+    }
+    .fondo3{
+      background: #F1BBBA;
+    }
     
   </style>
 </head>
-<body>
+<body class="fondo1"> 
   <div class="container">
     <div class="row row-cols-auto">
       <div class="col-md-4 col-6">
@@ -32,14 +42,14 @@
       </div>
     </div>
   </div>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+  <nav class="navbar navbar-expand-lg fondo2">
     <div class="container text-center container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav mx-auto flex-nowrap">
-        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
         <li class="nav-item"><a class="nav-link" href="#quienes_somos">Quienes somos</a></li>
         <li class="nav-item"><a class="nav-link" href="cafeteria.html">Cafetería y sandwich</a></li>
         <li class="nav-item"><a class="nav-link" href="pasteleria.html">Pasteleria</a></li>
@@ -51,8 +61,8 @@
     </div>
   </nav>
 
-  <section>
-    <div class="container py-5 my-5">
+  <section class="fondo3">
+    <div class="container">
       <h1 class="pb-5">Quiénes Somos</h1>
       <p>En Rincón de Sabores, creemos que cada preparación cuenta una historia. Desde nuestros inicios, hemos trabajado con pasión para crear un espacio acogedor donde las personas puedan disfrutar de momentos únicos, ya sea para empezar el día con energía o para compartir una comida inolvidable en buena compañía.</p>
       <p>Utilizamos ingredientes frescos y seleccionados con cuidado, porque sabemos que una buena comida empieza con productos de calidad. Trabajamos con proveedores locales para asegurarnos de que cada plato lleve lo mejor de nuestra región a tu mesa.</p>
@@ -65,7 +75,7 @@
   </section>
 
   <footer class="bg-info text-center">
-    <div class="text-center p-3 text-bg-dark">
+    <div class="text-center p-3 fondo2">
       contacto@rincondesabores.net
     </div>
   </footer>

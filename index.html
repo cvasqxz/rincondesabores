@@ -17,10 +17,23 @@
     .active {
       font-weight: bold;
     }
-    
+    .card-img-top {
+      object-fit: cover;
+      height: 250px;
+    }
+    .fondo1 {
+      background: #F8ECC9;
+    }
+    .fondo2 {
+      background: #688881;
+    }
+    .fondo3{
+      background: #F1BBBA;
+    }
+
   </style>
 </head>
-<body>
+<body class="fondo1">
   <div class="container">
     <div class="row row-cols-auto">
       <div class="col-md-4 col-6">
@@ -28,7 +41,7 @@
       </div>
     </div>
   </div>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+  <nav class="navbar navbar-expand-lg navbar-dark fondo2">
     <div class="container text-center container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -53,10 +66,10 @@
         <div class="carousel-item active">
           <div class="row">
             <div class="col-6 col-md-3 m-0 p-0">
-              <img src="img/1.jpg" class="img-fluid">
+              <img src="img/pasteleria1.jpg" class="img-fluid">
             </div>
             <div class="col-6 col-md-3 m-0 p-0">
-              <img src="img/2.jpg" class="img-fluid">
+              <img src="img/pasteleria2.jpg" class="img-fluid">
             </div>
             <div class="col-6 col-md-3 m-0 p-0">
               <img src="img/3.jpg" class="img-fluid">
@@ -93,8 +106,8 @@
     </div>
   </section>
 
-  <section id="quienes_somos">
-    <div class="container py-5 my-5">
+  <section class="fondo3" id="quienes_somos">
+    <div class="container py-5">
       <h1 class="pb-5">Quiénes Somos</h1>
       <p>En Rincón de Sabores, creemos que cada preparación cuenta una historia. Desde nuestros inicios, hemos trabajado con pasión para crear un espacio acogedor donde las personas puedan disfrutar de momentos únicos, ya sea para empezar el día con energía o para compartir una comida inolvidable en buena compañía.</p>
       <p>Utilizamos ingredientes frescos y seleccionados con cuidado, porque sabemos que una buena comida empieza con productos de calidad. Trabajamos con proveedores locales para asegurarnos de que cada plato lleve lo mejor de nuestra región a tu mesa.</p>
@@ -104,88 +117,124 @@
     </div>
   </section>
 
+  <section class="container py-5 my-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <h5 class="card-title text-center">Cafetería - Sandwich</h5>
+          <img src="img/pasteleria2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Te invitamos a disfrutar de un delicioso café acompañado de nuestros irresistibles sándwiches. Creamos combinaciones que satisfacen tanto a los amantes del café como a los que buscan un bocado sabroso y nutritivo. Con ingredientes frescos y de calidad, cada opción es una experiencia para tus sentidos..</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/pasteleria1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
   <section>
 
       <div class="container py-5 my-5">
-        <h1 class="pb-5">Nuestros productos</h1>
+        <h1 class="pb-5 text-center">Nuestros productos</h1>
         <div class="row">
-          <div class="col">
-            <div class="card" style="width: 18rem;">
+          <div class="col-md-4">
+            <div class="card">
               <div class="card-body">
                 <h5 class="card-title">Cafetería - Sandwich</h5>
                 <p class="card-text">Te invitamos a disfrutar de un delicioso café acompañado de nuestros irresistibles sándwiches. Creamos combinaciones que satisfacen tanto a los amantes del café como a los que buscan un bocado sabroso y nutritivo. Con ingredientes frescos y de calidad, cada opción es una experiencia para tus sentidos.
                 </p>
-              </div>
-              <div class="card-body">
-                <img src="img/1.jpg" class="card-img-top" alt="...">
+                <img src="img/3.jpg" class="card-img-top" alt="...">
+                <hr>
                 <a href="cafeteria.html" class="card-link">ver más</a>
               </div>
             </div>
           </div>  
-          <div class="col">
-          <div class="card" style="width: 18rem;">
-            <div class="card-body">
-              <h5 class="card-title">Pasteleria</h5>
-              <p class="card-text">Ofrecemos una variedad de productos de pastelería hechos a mano, utilizando ingredientes frescos y de la mejor calidad. Desde clásicos de siempre hasta nuestras especialidades, son el complemento perfecto para cualquier ocasión para satisfacer todos los gustos.</p>
-            </div>
-            <div class="card-body">
-              <img src="img/1.jpg" class="card-img-top" alt="...">
-              <a href="#" class="card-link">ver más</a>
-            </div>
-          </div>
-        </div>  
-          <div class="col">
-            <div class="card" style="width: 18rem;">
+          <div class="col-md-4">
+            <div class="card">
               <div class="card-body">
-                <h5 class="card-title">Coctelería</h5>
-                <p class="card-text">Sabemos que un buen coffee break es clave para cualquier reunión o evento. Ofrecemos un servicio completo para tus pausas de trabajo, encuentros sociales o eventos corporativos, con una selección de bebidas y snacks que combinan calidad y sabor. Ya sea que busques algo simple o un menú más completo, nos adaptamos a tus necesidades para ofrecer una experiencia deliciosa y reconfortante.</p>
-              </div>
-              <div class="card-body">
-                <img src="img/1.jpg" class="card-img-top" alt="...">
+                <h5 class="card-title">Pasteleria</h5>
+                <p class="card-text">Ofrecemos una variedad de productos de pastelería hechos a mano, utilizando ingredientes frescos y de la mejor calidad. Desde clásicos de siempre hasta nuestras especialidades, son el complemento perfecto para cualquier ocasión para satisfacer todos los gustos.
+                </p>
+                <img src="img/2.jpg" class="card-img-top" alt="...">
+                <hr>
                 <a href="#" class="card-link">ver más</a>
               </div>
             </div>
-          </div>             
-          </div>
-          <div class="row">
-            <div class="col">
-              <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Congelados y Refrigerados</h5>
-                  <p class="card-text">Te ofrecemos la comodidad de llevarte a casa nuestros platos caseros, para que disfrutes del sabor auténtico cuando quieras. Todos nuestros productos congelados y refrigerados están preparados con los mismos ingredientes frescos y naturales que utilizamos en nuestro local, para que puedas tener una comida deliciosa en minutos.
-                    ¡Perfecto para los días en los que quieres algo rápido pero sin renunciar al sabor!
-                    </p>
-                </div>
-                <div class="card-body">
-                  <img src="img/1.jpg" class="card-img-top" alt="...">
-                  <a href="#" class="card-link">ver más</a>
-                </div>
+          </div>  
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Coctelería</h5>
+                <p class="card-text">Sabemos que un buen coffee break es clave para cualquier reunión o evento. Ofrecemos un servicio completo para tus pausas de trabajo, encuentros sociales o eventos corporativos, con una selección de bebidas y snacks que combinan calidad y sabor. Ya sea que busques algo simple o un menú más completo, nos adaptamos a tus necesidades para ofrecer una experiencia deliciosa y reconfortante.</p>
+                <img src="img/photo_19_2024-10-16_20-16-53.jpg" class="card-img-top" alt="...">
+                <hr>
+                <a href="#" class="card-link">ver más</a>
               </div>
-
-            </div>
-            <div class="col">
-              <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Empanadas</h5>
-                  <p class="card-text">Nuestras empanadas son un homenaje a la tradición y al sabor auténtico de la comida casera. Preparadas a mano todos los días, utilizamos los mejores ingredientes para ofrecerte una experiencia llena de sabor en cada bocado. Ya sea que prefieras los sabores clásicos o quieras probar combinaciones innovadoras, tenemos una empanada para cada gusto.
-                    Elige la tuya!
-                    </p>
-                </div>
-                <div class="card-body">
-                  <img src="img/1.jpg" class="card-img-top" alt="...">
-                  <a href="#" class="card-link">ver más</a>
-                </div>
-              </div>
-
             </div>
           </div>
         </div>
+        <div class="row my-4">
+          <div class="col-md-4 offset-md-2">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Congelados y Refrigerados</h5>
+                <p class="card-text">Te ofrecemos la comodidad de llevarte a casa nuestros platos caseros, para que disfrutes del sabor auténtico cuando quieras. Todos nuestros productos congelados y refrigerados están preparados con los mismos ingredientes frescos y naturales que utilizamos en nuestro local, para que puedas tener una comida deliciosa en minutos.
+                  ¡Perfecto para los días en los que quieres algo rápido pero sin renunciar al sabor!
+                  </p>
+                <img src="img/8.jpg" class="card-img-top" alt="...">
+                <hr>
+                <a href="#" class="card-link">ver más</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Empanadas</h5>
+                <p class="card-text">Nuestras empanadas son un homenaje a la tradición y al sabor auténtico de la comida casera. Preparadas a mano todos los días, utilizamos los mejores ingredientes para ofrecerte una experiencia llena de sabor en cada bocado. Ya sea que prefieras los sabores clásicos o quieras probar combinaciones innovadoras, tenemos una empanada para cada gusto.
+                  Elige la tuya!
+                  </p>
+                <img src="img/7.jpg" class="card-img-top" alt="...">
+                <hr>
+                <a href="#" class="card-link">ver más</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
       
 
   </section>
-  <footer class="bg-info text-center">
-    <div class="text-center p-3 text-bg-dark">
+  <footer class="fondo2 text-center">
+    <div class="text-center p-3 fondo3">
       contacto@rincondesabores.net
     </div>
   </footer>
